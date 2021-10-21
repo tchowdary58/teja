@@ -3,8 +3,8 @@ node {
     git 'https://github.com/tchowdary58/teja.git'
   }
   stage('SonarQube analysis') {
-    def scannerHome = tool 'sonar-scanner';
-    withSonarQubeEnv('sonar-scanner') {
+    def scannerHome = tool 'SonarQube';
+    withSonarQubeEnv('SonarQube') {
       sh "${scannerHome}/bin/sonar-scanner \
       -D sonar.login=admin \
       -D sonar.password=Kasturi@08 \
