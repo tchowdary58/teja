@@ -1,0 +1,5 @@
+M=int(input())
+B=int(input())
+a=M+M
+b=a+a
+print(b)
